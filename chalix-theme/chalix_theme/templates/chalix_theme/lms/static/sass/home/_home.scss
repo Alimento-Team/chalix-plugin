@@ -302,26 +302,33 @@ section.home {
 
 // Process Container
 .process-container {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 16px;
     width: 100%;
-    height: 400px;
+    height: auto;
 
     // Process Step 1
     .step-1 {
-        position: absolute;
-        left: 114px;
-        top: 680px;
-        width: 272px;
-        height: 203px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 1 1 0;
+        max-width: 280px;
+        height: auto;
 
         .step-circle {
             width: 60px;
             height: 60px;
-            left: 59px;
-            top: 0px;
-            position: absolute;
             background: #3494c8;
-            border-radius: 30px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -329,69 +336,62 @@ section.home {
             font-size: 24px;
             font-weight: bold;
             color: white;
+            margin-bottom: 20px;
         }
 
         .step-content {
-            position: absolute;
-            left: 0px;
-            top: 80px;
-            width: 272px;
-            height: 123px;
+            width: 100%;
+            height: auto;
 
             .step-title {
-                width: 129px;
-                height: 25px;
-                left: 59px;
-                top: 0px;
-                position: absolute;
+                width: 100%;
+                height: auto;
                 font-family: 'Inter', sans-serif;
                 font-size: 20px;
                 font-weight: 600;
                 line-height: 24.2px;
                 color: #0054a6;
+                margin-bottom: 15px;
+                text-align: center;
             }
 
             .step-description {
-                width: 272px;
-                height: 78px;
-                left: 0px;
-                top: 45px;
-                position: absolute;
+                width: 100%;
+                height: auto;
                 font-family: 'Inter', sans-serif;
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 21.78px;
                 color: #0674b0;
                 margin: 0;
+                text-align: center;
             }
         }
     }
 
     // Arrow 1
     .arrow-1 {
-        position: absolute;
-        left: 416px;
-        top: 710px;
-        width: 180px;
+        flex: 0 0 auto;
+        width: 120px;
         height: 15px;
+        align-self: center;
     }
 
     // Process Step 2
     .step-2 {
-        position: absolute;
-        left: 626px;
-        top: 680px;
-        width: 272px;
-        height: 263px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 1 1 0;
+        max-width: 280px;
+        height: auto;
 
         .step-circle {
             width: 60px;
             height: 60px;
-            left: 106px;
-            top: 0px;
-            position: absolute;
             background: #3494c8;
-            border-radius: 30px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -399,69 +399,62 @@ section.home {
             font-size: 24px;
             font-weight: bold;
             color: white;
+            margin-bottom: 20px;
         }
 
         .step-content {
-            position: absolute;
-            left: 0px;
-            top: 80px;
-            width: 272px;
-            height: 183px;
+            width: 100%;
+            height: auto;
 
             .step-title {
-                width: 76px;
-                height: 25px;
-                left: 98px;
-                top: 0px;
-                position: absolute;
+                width: 100%;
+                height: auto;
                 font-family: 'Inter', sans-serif;
                 font-size: 20px;
                 font-weight: 700;
                 line-height: 24.2px;
                 color: #0054a6;
+                margin-bottom: 15px;
+                text-align: center;
             }
 
             .step-description {
-                width: 272px;
-                height: 138px;
-                left: 0px;
-                top: 45px;
-                position: absolute;
+                width: 100%;
+                height: auto;
                 font-family: 'Inter', sans-serif;
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 21.78px;
                 color: #0674b0;
                 margin: 0;
+                text-align: center;
             }
         }
     }
 
     // Arrow 2
     .arrow-2 {
-        position: absolute;
-        left: 928px;
-        top: 710px;
-        width: 202px;
+        flex: 0 0 auto;
+        width: 120px;
         height: 15px;
+        align-self: center;
     }
 
     // Process Step 3
     .step-3 {
-        position: absolute;
-        left: 1160px;
-        top: 680px;
-        width: 272px;
-        height: 243px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 1 1 0;
+        max-width: 280px;
+        height: auto;
 
         .step-circle {
             width: 60px;
             height: 60px;
-            left: 106px;
-            top: 0px;
-            position: absolute;
             background: #3494c8;
-            border-radius: 30px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -469,69 +462,62 @@ section.home {
             font-size: 24px;
             font-weight: bold;
             color: white;
+            margin-bottom: 20px;
         }
 
         .step-content {
-            position: absolute;
-            left: 0px;
-            top: 80px;
-            width: 272px;
-            height: 163px;
+            width: 100%;
+            height: auto;
 
             .step-title {
-                width: 76px;
-                height: 25px;
-                left: 98px;
-                top: 0px;
-                position: absolute;
+                width: 100%;
+                height: auto;
                 font-family: 'Inter', sans-serif;
                 font-size: 20px;
                 font-weight: 600;
                 line-height: 24.2px;
                 color: #0054a6;
+                margin-bottom: 15px;
+                text-align: center;
             }
 
             .step-description {
-                width: 272px;
-                height: 118px;
-                left: 0px;
-                top: 45px;
-                position: absolute;
+                width: 100%;
+                height: auto;
                 font-family: 'Inter', sans-serif;
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 21.78px;
                 color: #0674b0;
                 margin: 0;
+                text-align: center;
             }
         }
     }
 
     // Arrow 3
     .arrow-3 {
-        position: absolute;
-        left: 630px;
-        top: 980px;
-        width: 180px;
+        flex: 0 0 auto;
+        width: 120px;
         height: 15px;
+        align-self: center;
     }
 
     // Process Step 4
     .step-4 {
-        position: absolute;
-        left: 340px;
-        top: 950px;
-        width: 272px;
-        height: 243px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 1 1 0;
+        max-width: 280px;
+        height: auto;
 
         .step-circle {
             width: 60px;
             height: 60px;
-            left: 106px;
-            top: 0px;
-            position: absolute;
             background: #3494c8;
-            border-radius: 30px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -539,40 +525,35 @@ section.home {
             font-size: 24px;
             font-weight: bold;
             color: white;
+            margin-bottom: 20px;
         }
 
         .step-content {
-            position: absolute;
-            left: 0px;
-            top: 80px;
-            width: 272px;
-            height: 163px;
+            width: 100%;
+            height: auto;
 
             .step-title {
-                width: 170px;
-                height: 25px;
-                left: 51px;
-                top: 0px;
-                position: absolute;
+                width: 100%;
+                height: auto;
                 font-family: 'Inter', sans-serif;
                 font-size: 20px;
                 font-weight: 600;
                 line-height: 24.2px;
                 color: #0054a6;
+                margin-bottom: 15px;
+                text-align: center;
             }
 
             .step-description {
-                width: 272px;
-                height: 118px;
-                left: 0px;
-                top: 45px;
-                position: absolute;
+                width: 100%;
+                height: auto;
                 font-family: 'Inter', sans-serif;
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 21.78px;
                 color: #0674b0;
                 margin: 0;
+                text-align: center;
             }
         }
     }
@@ -584,6 +565,25 @@ section.home {
         path {
             stroke: #3494c8;
             stroke-width: 2;
+        }
+    }
+
+    // Responsive: Stack steps on small screens
+    @media (max-width: 900px) {
+        flex-direction: column;
+        gap: 32px;
+
+        .arrow-1,
+        .arrow-2,
+        .arrow-3 {
+            display: none;
+        }
+
+        .step-1,
+        .step-2,
+        .step-3,
+        .step-4 {
+            max-width: 300px;
         }
     }
 }
@@ -655,11 +655,15 @@ section.home {
             margin-bottom: 40px;
         }
 
+        /* Ensure process steps stay in a single row on typical desktops */
         .process-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: auto;
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: 20px !important;
+            height: auto !important;
 
             .process-step,
             .step-1,
@@ -669,19 +673,21 @@ section.home {
                 position: relative !important;
                 left: auto !important;
                 top: auto !important;
-                width: 100% !important;
-                max-width: 300px;
+                width: auto !important;
+                max-width: 280px !important;
+                flex: 1 1 0 !important;
                 height: auto !important;
-                margin-bottom: 40px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                margin: 0 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center !important;
 
                 .step-circle {
                     position: relative !important;
                     left: auto !important;
                     top: auto !important;
-                    margin-bottom: 20px;
+                    margin-bottom: 16px !important;
                 }
 
                 .step-content {
@@ -690,7 +696,7 @@ section.home {
                     top: auto !important;
                     width: 100% !important;
                     height: auto !important;
-                    text-align: center;
+                    text-align: center !important;
 
                     .step-title {
                         position: relative !important;
@@ -698,7 +704,7 @@ section.home {
                         top: auto !important;
                         width: 100% !important;
                         height: auto !important;
-                        margin-bottom: 15px;
+                        margin-bottom: 12px !important;
                     }
 
                     .step-description {
@@ -711,13 +717,113 @@ section.home {
                 }
             }
 
+            /* Arrows visible and centered between steps */
             .arrow,
             .arrow-1,
             .arrow-2,
             .arrow-3 {
-                display: none;
+                display: block !important;
+                width: 120px !important;
+                height: auto !important;
+                align-self: center !important;
             }
         }
+    }
+}
+
+/* Base overrides to neutralize absolute positioning and enforce row layout on normal screens */
+.landing-page .process-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 20px !important;
+    max-width: 1200px !important;
+    margin: 40px auto !important;
+    padding: 0 16px !important;
+}
+
+.landing-page .process-container .process-step,
+.landing-page .process-container .step-1,
+.landing-page .process-container .step-2,
+.landing-page .process-container .step-3,
+.landing-page .process-container .step-4 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: auto !important;
+    max-width: 280px !important;
+    flex: 1 1 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.landing-page .process-container .process-step .step-circle,
+.landing-page .process-container .step-1 .step-circle,
+.landing-page .process-container .step-2 .step-circle,
+.landing-page .process-container .step-3 .step-circle,
+.landing-page .process-container .step-4 .step-circle {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    margin-bottom: 16px !important;
+}
+
+.landing-page .process-container .process-step .step-content,
+.landing-page .process-container .step-1 .step-content,
+.landing-page .process-container .step-2 .step-content,
+.landing-page .process-container .step-3 .step-content,
+.landing-page .process-container .step-4 .step-content {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+}
+
+.landing-page .process-container .arrow,
+.landing-page .process-container .arrow-1,
+.landing-page .process-container .arrow-2,
+.landing-page .process-container .arrow-3 {
+    display: block !important;
+    width: 120px !important;
+    height: auto !important;
+    align-self: center !important;
+}
+
+/* Support for cases where arrows are wrapped in a .process-arrow div */
+.landing-page .process-container .process-arrow {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 60px !important;
+}
+
+.landing-page .process-container .process-arrow svg,
+.landing-page .process-container .process-arrow .arrow {
+    display: block !important;
+    width: 120px !important;
+    height: auto !important;
+}
+
+/* Stack steps and hide arrows only on small screens */
+@media (max-width: 900px) {
+    .landing-page .process-container {
+        flex-direction: column !important;
+        gap: 32px !important;
+    }
+
+    .landing-page .process-container .arrow,
+    .landing-page .process-container .arrow-1,
+    .landing-page .process-container .arrow-2,
+    .landing-page .process-container .arrow-3 {
+        display: none !important;
     }
 }
 
@@ -799,7 +905,7 @@ section.home {
     height: auto !important;
     margin-bottom: 14px !important;
     border-radius: 8px !important;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.12) !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12) !important;
     object-fit: cover !important;
 }
 
@@ -840,11 +946,8 @@ section.home {
 }
 
 /* Small visual tweak: add subtle background and inner padding for the whole features block if desired */
-.landing-page {
-    /* light neutral background behind the grid to match screenshot spacing */
-    /* comment/uncomment below if you want the pale background */
-    /* background: #f7fff7; */
-}
+/* If you want a pale background, uncomment below: */
+/* .landing-page { background: #f7fff7; } */
 
 // Original existing styles for search functionality
 .global-header .nav-links .secondary {

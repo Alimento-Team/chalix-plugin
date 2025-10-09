@@ -6,12 +6,164 @@ from openedx.core.djangolib.markup import HTML, Text %>
     <!-- Main Landing Page Content -->
     <div class="landing-page">
         <style>
-            /* Ensure the themed process flow is horizontal on wide screens and stacks on small screens */
-            .process-container { display: flex; align-items: center; justify-content: space-between; gap: 20px; max-width: 1200px; margin: 40px auto; padding: 0 16px; }
-            .process-step { flex: 1 1 0; min-width: 140px; max-width: 260px; text-align: center; }
-            .process-arrow { flex: 0 0 60px; display: flex; align-items: center; justify-content: center; }
-            .process-arrow svg, .arrow { width: 36px; height: 12px; }
-            @media (max-width: 900px) { .process-container { flex-direction: column; gap: 32px; } .process-arrow, .arrow { display: none; } }
+            /* Process title styling */
+            .home .landing-page .process-title,
+            body .landing-page .process-title,
+            .process-title {
+                position: relative !important;
+                left: auto !important;
+                top: auto !important;
+                width: 100% !important;
+                height: auto !important;
+                font-family: 'Inter', sans-serif !important;
+                font-size: 20px !important;
+                font-weight: 600 !important;
+                line-height: 24.2px !important;
+                text-align: center !important;
+                color: #0054a6 !important;
+                margin: 60px auto 40px auto !important;
+            }
+            
+            /* Process container - Let multicourse SCSS handle layout */
+
+            /* Also target explicitly named steps that may carry absolute positioning in legacy CSS */
+            .home .landing-page .process-container > .step-1,
+            .home .landing-page .process-container > .step-2,
+            .home .landing-page .process-container > .step-3,
+            .home .landing-page .process-container > .step-4,
+            body .landing-page .process-container > .step-1,
+            body .landing-page .process-container > .step-2,
+            body .landing-page .process-container > .step-3,
+            body .landing-page .process-container > .step-4,
+            .process-container > .step-1,
+            .process-container > .step-2,
+            .process-container > .step-3,
+            .process-container > .step-4 {
+                position: relative !important;
+                left: auto !important;
+                top: auto !important;
+                width: auto !important;
+                flex: 1 1 180px !important;
+                min-width: 160px !important;
+                max-width: 280px !important;
+                margin: 0 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                height: auto !important;
+                margin-bottom: 0 !important;
+            }
+            
+            /* Override step content positioning */
+            .home .landing-page .process-container .step-content,
+            body .landing-page .process-container .step-content,
+            .process-container .step-content {
+                position: relative !important;
+                left: auto !important;
+                top: auto !important;
+                width: 100% !important;
+                height: auto !important;
+                text-align: center !important;
+                margin: 0 !important;
+            }
+            
+            .home .landing-page .process-container .step-circle,
+            body .landing-page .process-container .step-circle,
+            .process-container .step-circle {
+                position: relative !important;
+                left: auto !important;
+                top: auto !important;
+                margin: 0 auto 16px auto !important;
+                width: 60px !important;
+                height: 60px !important;
+                background: #3494c8 !important;
+                border-radius: 50% !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                font-family: 'Inter', sans-serif !important;
+                font-size: 24px !important;
+                font-weight: bold !important;
+                color: white !important;
+            }
+            
+            .home .landing-page .process-container .step-title,
+            body .landing-page .process-container .step-title,
+            .process-container .step-title {
+                position: relative !important;
+                left: auto !important;
+                top: auto !important;
+                width: 100% !important;
+                height: auto !important;
+                margin: 0 auto 12px auto !important;
+                font-family: 'Inter', sans-serif !important;
+                font-size: 18px !important;
+                font-weight: 600 !important;
+                line-height: 22px !important;
+                color: #0054a6 !important;
+                text-align: center !important;
+            }
+            
+            .home .landing-page .process-container .step-description,
+            body .landing-page .process-container .step-description,
+            .process-container .step-description {
+                position: relative !important;
+                left: auto !important;
+                top: auto !important;
+                width: 100% !important;
+                height: auto !important;
+                margin: 0 !important;
+                font-family: 'Inter', sans-serif !important;
+                font-size: 16px !important;
+                font-weight: 400 !important;
+                line-height: 20px !important;
+                color: #0674b0 !important;
+                text-align: center !important;
+            }
+            
+            .process-arrow {
+                flex: 0 0 40px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                flex-shrink: 0 !important;
+            }
+            .process-arrow svg, .arrow {
+                width: 32px !important;
+                height: 12px !important;
+                display: block !important;
+                flex: 0 0 auto !important;
+            }
+            /* Ensure row + arrows for >=992px to override edx defaults */
+            @media (min-width: 992px) {
+                .home .landing-page .process-container,
+                body .landing-page .process-container,
+                .process-container { 
+                    flex-direction: row !important; 
+                    flex-wrap: nowrap !important; 
+                }
+                .home .landing-page .process-container .arrow,
+                body .landing-page .process-container .arrow,
+                .arrow { 
+                    display: block !important; 
+                }
+            }
+            /* Stack and hide arrows on small screens */
+            @media (max-width: 900px) {
+                .home .landing-page .process-container,
+                body .landing-page .process-container,
+                .process-container { 
+                    flex-direction: column !important; 
+                    gap: 28px !important; 
+                }
+                .home .landing-page .process-container .process-arrow,
+                .home .landing-page .process-container .arrow,
+                body .landing-page .process-container .process-arrow,
+                body .landing-page .process-container .arrow,
+                .process-arrow, .arrow { 
+                    display: none !important; 
+                }
+            }
         </style>
         <!-- Features Title -->
         <h2 class="landing-title">Các tính năng nổi bật của phần mềm học tập thông minh dành cho CC, VC</h2>
@@ -67,7 +219,7 @@ from openedx.core.djangolib.markup import HTML, Text %>
         <h2 class="process-title">Quy trình triển khai phần mềm học tập thông minh</h2>
 
         <!-- Process Container -->
-    <div class="process-container" style="display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:20px;">
+    <div class="process-container" style="display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important;justify-content:space-between!important;gap:16px!important;max-width:1200px!important;margin:40px auto!important;padding:0 16px!important;position:relative!important;">
 
             <!-- Process Step 1 -->
             <div class="process-step step-1">
