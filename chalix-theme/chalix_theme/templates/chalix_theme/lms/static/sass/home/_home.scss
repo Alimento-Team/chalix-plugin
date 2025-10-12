@@ -369,11 +369,11 @@ section.home {
         }
     }
 
-    // Arrow 1
+    // Arrow 1 - Made smaller
     .arrow-1 {
         flex: 0 0 auto;
-        width: 120px;
-        height: 15px;
+        width: 60px;
+        height: 12px;
         align-self: center;
     }
 
@@ -432,11 +432,11 @@ section.home {
         }
     }
 
-    // Arrow 2
+    // Arrow 2 - Made smaller
     .arrow-2 {
         flex: 0 0 auto;
-        width: 120px;
-        height: 15px;
+        width: 60px;
+        height: 12px;
         align-self: center;
     }
 
@@ -495,11 +495,11 @@ section.home {
         }
     }
 
-    // Arrow 3
+    // Arrow 3 - Made smaller
     .arrow-3 {
         flex: 0 0 auto;
-        width: 120px;
-        height: 15px;
+        width: 60px;
+        height: 12px;
         align-self: center;
     }
 
@@ -558,18 +558,18 @@ section.home {
         }
     }
 
-    // Arrows styling
+    // Arrows styling - Made smaller
     .arrow {
         fill: none;
 
         path {
             stroke: #3494c8;
-            stroke-width: 2;
+            stroke-width: 1.5;
         }
     }
 
-    // Responsive: Stack steps on small screens
-    @media (max-width: 900px) {
+    // Responsive: Stack steps on very small screens only
+    @media (max-width: 600px) {
         flex-direction: column;
         gap: 32px;
 
@@ -717,13 +717,13 @@ section.home {
                 }
             }
 
-            /* Arrows visible and centered between steps */
+            /* Arrows visible and centered between steps - Made smaller */
             .arrow,
             .arrow-1,
             .arrow-2,
             .arrow-3 {
                 display: block !important;
-                width: 120px !important;
+                width: 60px !important;
                 height: auto !important;
                 align-self: center !important;
             }
@@ -792,7 +792,7 @@ section.home {
 .landing-page .process-container .arrow-2,
 .landing-page .process-container .arrow-3 {
     display: block !important;
-    width: 120px !important;
+    width: 60px !important;
     height: auto !important;
     align-self: center !important;
 }
@@ -808,12 +808,12 @@ section.home {
 .landing-page .process-container .process-arrow svg,
 .landing-page .process-container .process-arrow .arrow {
     display: block !important;
-    width: 120px !important;
+    width: 60px !important;
     height: auto !important;
 }
 
-/* Stack steps and hide arrows only on small screens */
-@media (max-width: 900px) {
+/* Stack steps and hide arrows only on very small screens */
+@media (max-width: 600px) {
     .landing-page .process-container {
         flex-direction: column !important;
         gap: 32px !important;
