@@ -5,6 +5,7 @@
 <%namespace name='static' file='../static_content.html' />
 <%namespace file='../main.html' import="login_query" />
 <%! from django.urls import reverse %>
+<%! from urllib.parse import urljoin %>
     <%! from django.utils.translation import gettext as _ %>
         <%! import waffle %>
             <%! from lms.djangoapps.ccx.overrides import get_current_ccx %>
@@ -102,7 +103,7 @@
                                                                 alt="Learning" />
                                                             <span>Học tập</span>
                                                         </a>
-                                                        <a href="${settings.ACCOUNT_MICROFRONTEND_URL if settings.ACCOUNT_MICROFRONTEND_URL else '#'}"
+                                                        <a href="${urljoin(settings.ACCOUNT_MICROFRONTEND_URL, 'account/') if settings.ACCOUNT_MICROFRONTEND_URL else '#'}"
                                                             class="nav-tab">
                                                             <img src="${static.url('images/profile.svg')}"
                                                                 alt="Profile" />
