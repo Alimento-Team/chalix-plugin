@@ -112,6 +112,8 @@ chalix_theme_styled_mfes = [
     "profile",
     "account",
     "discussions",
+    "authn",
+    "course-authoring",
 ]
 
 for mfe in chalix_theme_styled_mfes:
