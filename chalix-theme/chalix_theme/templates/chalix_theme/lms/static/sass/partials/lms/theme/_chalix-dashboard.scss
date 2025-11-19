@@ -231,10 +231,20 @@ header.chalix-header .chalix-header-content,
     margin-top: auto;
 }
 
+.wrapper-footer {
+    padding: 8px 0 !important;
+}
+
+.wrapper-footer {
+    @include media-breakpoint-up(md) {
+        padding: 12px 0 !important;
+    }
+}
+
 .chalix-footer footer {
     background-color: #3563c1 !important;
-    padding: 0 !important;
-    min-height: 140px;
+    padding: 8px 0 !important;
+    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,9 +257,9 @@ header.chalix-header .chalix-header-content,
 .chalix-footer .footer-text p {
     color: white !important;
     font-family: 'Roboto', sans-serif !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     font-weight: 400 !important;
-    line-height: 24px !important;
+    line-height: 18px !important;
     letter-spacing: 0.5px !important;
     margin: 0 !important;
 }

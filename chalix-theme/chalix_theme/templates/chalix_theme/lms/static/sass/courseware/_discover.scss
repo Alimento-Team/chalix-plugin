@@ -184,6 +184,10 @@
                                 margin: -4px 10px 0 0;
                                 vertical-align: middle;
                             }
+
+                            span:not(.sr) {
+                                font-style: italic;
+                            }
                         }
                     }
                 }
